@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>Music Genre Classification</title>
+    <link rel="icon" href="{% static 'music/images/headphone.png' %}" />
+    <link
+      href="{% static 'music/css/owl.carousel.min.css' %}"
+      rel="stylesheet"
+    />
+    <link href="{% static 'music/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'music/css/slicknav.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'music/css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'music/css/styles.css' %}" rel="stylesheet" />
+    <link href="{% static 'music/css/mystyle.css' %}" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Preloader -->
+
+    <!-- end of preloader -->
+
+    <div class="content">
+      {% block content %}
+
+      <!-- content for different pages here -->
+
+      {% endblock content %}
+    </div>
+
+    {% include 'music/snippets/js.html' %}
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".up-input").change(function () {
+        $(".up-p").text(this.files.length + " file(s) selected");
+      });
+    });
+  </script>
+  <!-- Bootstrap core JavaScript -->
+</html>
