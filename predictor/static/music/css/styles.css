@@ -35,17 +35,17 @@ html {
 
 body,
 p {
-  color: #f1f1f8;
+  color: #000000;
   font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
 }
 
 .p-large {
-  color: #f1f1f8;
+  color: #000005;
   font: 400 1rem/1.5rem "Open Sans", sans-serif;
 }
 
 .p-small {
-  color: #f1f1f8;
+  color: #000000;
   font: 400 0.75rem/1.25rem "Open Sans", sans-serif;
 }
 
@@ -63,42 +63,42 @@ p {
 }
 
 h1 {
-  color: #f1f1f8;
+  color: #000000;
   font: 700 2.5rem/2.875rem "Montserrat", sans-serif;
 }
 
 h2 {
-  color: #f1f1f8;
+  color: #000000;
   font: 700 2.25rem/2.75rem "Montserrat", sans-serif;
 }
 
 h3 {
-  color: #f1f1f8;
+  color: #000000;
   font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
 }
 
 h4 {
-  color: #f1f1f8;
+  color: #000000;
   font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
 }
 
 h5 {
-  color: #f1f1f8;
+  color: #000000;
   font: 700 1.125rem/1.625rem "Montserrat", sans-serif;
 }
 
 h6 {
-  color: #f1f1f8;
+  color: #000000;
   font: 700 1rem/1.5rem "Montserrat", sans-serif;
 }
 
 a {
-  color: #f1f1f8;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #f1f1f8;
+  color: #f54d4d;
   text-decoration: none;
 }
 
@@ -107,7 +107,7 @@ a.turquoise {
 }
 
 a.white {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .testimonial-text {
@@ -124,7 +124,7 @@ a.white {
   border: 0.125rem solid #00c9db;
   border-radius: 2rem;
   background-color: #00c9db;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font: 700 0.75rem/0 "Montserrat", sans-serif;
   text-decoration: none;
   transition: all 0.2s;
@@ -142,7 +142,7 @@ a.white {
   border: 0.125rem solid #00c9db;
   border-radius: 2rem;
   background-color: #00c9db;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font: 700 0.75rem/0 "Montserrat", sans-serif;
   text-decoration: none;
   transition: all 0.2s;
@@ -179,7 +179,7 @@ a.white {
 
 .btn-outline-reg:hover {
   background-color: #00c9db;
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -271,7 +271,7 @@ a.white {
   border: 1px solid #9791ae;
   border-radius: 0.25rem;
   background-color: #413d52;
-  color: #f1f1f8;
+  color: #000000;
   font: 400 0.875rem/1.875rem "Open Sans", sans-serif;
   transition: all 0.2s;
   -webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
@@ -326,7 +326,7 @@ select::-ms-expand {
   border: 1px solid #9791ae;
   border-radius: 0.25rem;
   background-color: #413d52;
-  color: #f1f1f8;
+  color: #000000;
   font: 400 0.875rem/1.75rem "Open Sans", sans-serif;
   transition: all 0.2s;
 }
@@ -341,7 +341,7 @@ select::-ms-expand {
 .form-control-input:hover,
 .form-control-select:hover,
 .form-control-textarea:hover {
-  border: 1px solid #f1f1f8;
+  border: 1px solid #000000;
 }
 
 .checkbox {
@@ -1321,7 +1321,6 @@ input[type="checkbox"] {
 .counter {
   padding-top: 6.5rem;
   padding-bottom: 5.375rem;
-  background-color: #262431;
   text-align: center;
 }
 
@@ -1334,7 +1333,7 @@ input[type="checkbox"] {
 }
 
 .counter #counter .counter-value {
-  color: #f1f1f8;
+  color: #3e2dd6;
   font: 700 3.5rem/4.25rem "Montserrat", sans-serif;
   vertical-align: middle;
 }
@@ -1384,7 +1383,7 @@ input[type="checkbox"] {
 /**********************/
 .footer {
   padding-top: 5rem;
-  background-color: #262431;
+  background-color: #2208b6;
   float: left;
 }
 

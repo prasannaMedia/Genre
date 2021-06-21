@@ -1,29 +1,21 @@
 {% extends 'music/base.html' %}
 {% load static %}
 
-	<!-- Favicon  -->
- <link href="{% static 'music/css/bootstrap.min.css' %}" rel="stylesheet" />
- <link href="{% static 'music/css/style.css' %}" rel="stylesheet" />
- <link href="{% static 'music/css/styles.css' %}" rel="stylesheet" />
- <link href="{% static 'music/css/owl.carousel.min.css' %}" rel="stylesheet" />
- <link href="{% static 'music/css/slicknav.min.css' %}" rel="stylesheet" />
+<!-- Favicon  -->
+<link href="{% static 'music/css/bootstrap.min.css' %}" rel="stylesheet" />
+<link href="{% static 'music/css/style.css' %}" rel="stylesheet" />
+<link href="{% static 'music/css/styles.css' %}" rel="stylesheet" />
+<link href="{% static 'music/css/owl.carousel.min.css' %}" rel="stylesheet" />
 </head>
-<body >
 
-    <!-- Preloader -->  
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
-{% block content %}
-{% include 'music/snippets/nav.html' %}
+<body>
+	<!-- Preloader -->
+	<!-- end of preloader -->
 
-    <!-- Header -->
-  <section class="hero-section">
+	{% block content %}
+	<!-- Header -->
+	{% include 'music/snippets/nav.html' %}
+	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item">
 				<div class="container">
@@ -31,9 +23,12 @@
 						<div class="col-lg-6">
 							<div class="hs-text">
 								<h2><span>Music Classification</span> for everyone.</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
-								<a href="#" class="site-btn">Download Now</a>
-								<a href="#" class="site-btn sb-c2">Start free trial</a>
+								<p>This project involves extracting audio and musical features from various
+									genre-labeled audio files.These features are given to machine learning and deep
+									learning models for recognizing the music genre of given fragments of music tracks.
+								</p>
+								<a href="#basic-2" class="site-btn">Upload Music</a>
+								<a href="#" class="site-btn sb-c2">Dashboard</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -50,14 +45,39 @@
 						<div class="col-lg-6">
 							<div class="hs-text">
 								<h2><span>Classify</span> to new music.</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
-								<a href="#" class="site-btn">Download Now</a>
-								<a href="#" class="site-btn sb-c2">Start free trial</a>
+								<p>This project involves extracting audio and musical features from various
+									genre-labeled audio files.These features are given to machine learning and deep
+									learning models for recognizing the music genre of given fragments of music tracks.
+								</p>
+								<a href="#basic-2" class="site-btn">Upload Music</a>
+								<a href="#" class="site-btn sb-c2">Dashboard</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="hr-img">
-								<img src="{% static 'music/img/hero-bg.png' %}" alt="">
+								<img src="{% static 'music/images/collection/graphs/graph1.jpeg' %}" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hs-item">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hs-text">
+								<h2><span>Classify</span> to new music.</h2>
+								<p>This project involves extracting audio and musical features from various
+									genre-labeled audio files.These features are given to machine learning and deep
+									learning models for recognizing the music genre of given fragments of music tracks.
+								</p>
+								<a href="#basic-2" class="site-btn">Upload Music</a>
+								<a href="#" class="site-btn sb-c2">Dashboard</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="hr-img">
+								<img src="{% static 'music/images/collection/graphs/graph2.jpeg' %}" alt="">
 							</div>
 						</div>
 					</div>
@@ -65,54 +85,54 @@
 			</div>
 		</div>
 	</section>
-    <!-- File Upload -->
-    {% include 'music/check_genre.html' %}
-    <!-- Statistics -->
-    <div class="counter" id="statistics">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>STATISTICS</h2>
-            </div>
-        </div>
-        <div class="container" style="margin-top: 3rem;">
-            <div class="row">
-                <div class="col-lg-12">
+	<!-- File Upload -->
+	{% include 'music/check_genre.html' %}
+	<!-- Statistics -->
+	<div class="counter bg-white" id="statistics ">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>STATISTICS</h2>
+			</div>
+		</div>
+		<div class="container" style="margin-top: 3rem;">
+			<div class="row">
+				<div class="col-lg-12">
 
-                    <!-- Counter -->
-                    <div id="counter">
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="1000"&nbsp>1</div>
-                           
-                            <p class="counter-info">Total Music</p>
-                        </div>
+					<!-- Counter -->
+					<div id="counter">
+						<div class="cell">
+							<div class="counter-value number-count" data-count="1000" &nbsp>1</div>
 
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="750">1</div>
-                            <p class="counter-info">Training Set</p>
-                        </div>
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="250">1</div>
-                            <p class="counter-info">Testing Set</p>
-                        </div>
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="73.20">1</div>
-                            <p class="counter-info">Accuracy (%)</p>
-                        </div>
-                    </div>
-                    <!-- end of counter -->
+							<p class="counter-info">Total Music</p>
+						</div>
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of counter -->
-    <!-- end of statistics -->
+						<div class="cell">
+							<div class="counter-value number-count" data-count="750">1</div>
+							<p class="counter-info">Training Set</p>
+						</div>
+						<div class="cell">
+							<div class="counter-value number-count" data-count="250">1</div>
+							<p class="counter-info">Testing Set</p>
+						</div>
+						<div class="cell">
+							<div class="counter-value number-count" data-count="73.20">1</div>
+							<p class="counter-info">Accuracy (%)</p>
+						</div>
+					</div>
+					<!-- end of counter -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form -->
-    <!-- end of contact -->
-    <section class="how-section spad set-bg" data-setbg="img/how-to-bg.jpg">
+				</div> <!-- end of col -->
+			</div> <!-- end of row -->
+		</div> <!-- end of container -->
+	</div> <!-- end of counter -->
+	<!-- end of statistics -->
+
+	</div> <!-- end of col -->
+	</div> <!-- end of row -->
+	</div> <!-- end of container -->
+	</div> <!-- end of form -->
+	<!-- end of contact -->
+	<section class="how-section spad set-bg" data-setbg="img/how-to-bg.jpg" id="working">
 		<div class="container text-white">
 			<div class="section-title">
 				<h2>How it works</h2>
@@ -123,8 +143,11 @@
 						<div class="hi-icon">
 							<img src="img/icons/brain.png" alt="">
 						</div>
-						<h4>Create an account</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipi-scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. </p>
+						<h4>Data Collection and preparation</h4>
+						<p>Using pre-collected data by way of datasets from kaggle,UCI,etc,still fits into this
+							step.wrangle data and prepare it for training.Clean that which may require it(remove
+							duplicates,correct errrors,deal with missing values,normalization,data type conversion).
+						</p>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -132,8 +155,10 @@
 						<div class="hi-icon">
 							<img src="img/icons/pointer.png" alt="">
 						</div>
-						<h4>Choose a plan</h4>
-						<p>Donec in sodales dui, a blandit nunc. Pellen-tesque id eros venenatis, sollicitudin neque sodales, vehicula nibh. Nam massa odio, portti-tor vitae efficitur non. </p>
+						<h4>Model selection,Training</h4>
+						<p>different algorithms for different tasks.choose the right one .The goal of traing is to
+							answer a question or make a prediction correctly as often as possible.Test the model against
+							previously unseen data.Tune model parameters for improved performance </p>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -141,8 +166,9 @@
 						<div class="hi-icon">
 							<img src="img/icons/smartphone.png" alt="">
 						</div>
-						<h4>Download Music</h4>
-						<p>Ablandit nunc. Pellentesque id eros venenatis, sollicitudin neque sodales, vehicula nibh. Nam massa odio, porttitor vitae efficitur non, ultric-ies volutpat tellus. </p>
+						<h4>Make Predictions</h4>
+						<p>Using further data which have,until this point,been withheld from the model are used to test
+							the model ,a better approximation of how the model will perform in the real world. </p>
 					</div>
 				</div>
 			</div>
@@ -154,80 +180,91 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="section-title">
-						<h2>Our Concept & artists</h2>
+						<h2>Our Concept &Data sets</h2>
 					</div>
 				</div>
 				<div class="col-lg-6">
-					<p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>GTZAN dataset is taken and loaded.
+						The dataset consists of 1000 audio tracks, each 30 seconds long. It contains ten genres: blues,
+						classical, country, disco, hip-hop, jazz, reggae, rock, metal, and pop. Each genre consists of
+						100 sound clips.
+						Preprocessing the Data :- Before training the classification model, we have to transform raw
+						data from audio samples into more meaningful representations.
+						Feature Extraction :- The first step for music genre classification project would be to extract
+						features and components from the audio files. It includes identifying the linguistic content and
+						discarding noise.</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-sm-6">
 					<div class="concept-item">
-						<img src="{% static 'music/img/concept/1.jpg' %}" alt="">
-						<h5>Soul Music</h5>
+						<img src="{% static 'music/images/collection/types/Disco.jpg' %}" alt="">
+						<h5>Disco Genre</h5>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="concept-item">
-						<img src="{% static 'music/img/concept/2.jpg' %}"  alt="">
-						<h5>Live Concerts</h5>
+						<img src="{% static 'music/images/collection/types/Jazz.jpg' %}" alt="">
+						<h5>Jazz genre</h5>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="concept-item">
-						<img src="{% static 'music/img/concept/3.jpg' %}"  alt="">
-						<h5>Dj Sets</h5>
+						<img src="{% static 'music/images/collection/types/Metal.jpg' %}" alt="">
+						<h5>Metal genre</h5>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="concept-item">
-						<img src="{% static 'music/img/concept/4.jpg' %}"  alt="">
-						<h5>Live Streems</h5>
+						<img src="{% static 'music/images/collection/types/pop.jpg' %}" alt="">
+						<h5>Pop genre</h5>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-    <section class="premium-section spad">
+	<section class="premium-section spad" id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="section-title">
-						<h2>Why go Premium</h2>
+						<h2>Developers</h2>
 					</div>
 				</div>
 				<div class="col-lg-6">
-					<p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+						facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua.</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-sm-6">
 					<div class="premium-item">
-						<img src="img/premium/1.jpg" alt="">
-						<h4>No ad interruptions </h4>
-						<p>Consectetur adipiscing elit</p>
+						<img src="{% static 'music/images/collection/developer/prasanna.jpeg' %}" alt="">
+						<h4>Prasanna </h4>
+						<p>Django Developer</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="premium-item">
-						<img src="img/premium/2.jpg" alt="">
-						<h4>High Quality</h4>
-						<p>Ectetur adipiscing elit</p>
+						<img src="{% static 'music/images/collection/developer/prajwal.jpeg' %} " alt="">
+						<h4>Prajwal</h4>
+						<p>UI Developer</p>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class=" col-lg-3 col-sm-6">
 					<div class="premium-item">
-						<img src="img/premium/3.jpg" alt="">
-						<h4>Listen Offline</h4>
-						<p>Sed do eiusmod tempor </p>
+						<img src="{% static 'music/images/collection/developer/shubam.jpeg' %}" alt="">
+						<h4>Shubam</h4>
+						<p>Machine learning Developer </p>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class=" col-lg-3 col-sm-6">
 					<div class="premium-item">
-						<img src="img/premium/4.jpg" alt="">
-						<h4>Download Music</h4>
-						<p>Adipiscing elit</p>
+						<img src="{% static 'music/images/collection/developer/suguna.jpeg' %}" alt="">
+						<h4>Suguna Mam</h4>
+						<p>Guide</p>
 					</div>
 				</div>
 			</div>
@@ -236,7 +273,7 @@
 	<!-- Premium section end -->
 
 	<!-- Footer section -->
-	<footer class="footer-section">
+	<footer class=" footer-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-6 col-lg-7 order-lg-2">
@@ -277,9 +314,16 @@
 				</div>
 				<div class="col-xl-6 col-lg-5 order-lg-1">
 					<img src="img/logo.png" alt="">
-					<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+					<div class="copyright">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights
+						reserved | This product
+						is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+							href="https://prasannamedia.github.io/website" target="_blank">my
+							team</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</div>
 					<div class="social-links">
 						<a href=""><i class="fa fa-instagram"></i></a>
 						<a href=""><i class="fa fa-pinterest"></i></a>
@@ -292,9 +336,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div>
 	</footer>
 	<!-- Footer section end -->
-
-{% endblock %}
-
+	{% endblock %}
 </body>
 
 </html>
