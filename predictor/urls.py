@@ -20,5 +20,6 @@ app_name = 'predictor'
 
 urlpatterns = [
     path('', views.IndexView.as_view(), name='index'),
-    path('result/',views.model_form_upload,name = 'result'),
+    path('dashboard/', views.dashboard, name='dashboard'),
+    path('result/', views.model_form_upload, name='result'),
 ]

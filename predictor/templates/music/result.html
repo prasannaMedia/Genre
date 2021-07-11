@@ -1,105 +1,98 @@
 {{file.name}} {%load static%}
 <html lang="en">
-  <head>
-    <title>Music Genre Classification</title>
 
-    <!-- Styles -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i"
-      rel="stylesheet"
-    />
-    <link href="{% static 'music/css/bootstrap.min.css' %}" rel="stylesheet" />
-    <link
-      href="{% static 'music/css/fontawesome-all.css' %}"
-      rel="stylesheet"
-    />
-    <link href="{% static 'music/css/swiper.css' %}" rel="stylesheet" />
-    <link href="{% static 'music/css/magnific-popup.css' %}" rel="stylesheet" />
-    <link href="{% static 'music/css/style.css' %}" rel="stylesheet" />
+<head>
+  <title>Music Genre Classification</title>
 
-    <!-- Favicon  -->
-    <link rel="icon" href="{% static 'music/images/headphone.png' %}" />
-  </head>
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet" />
+  <link href="{% static 'music/css/bootstrap.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'music/css/fontawesome-all.css' %}" rel="stylesheet" />
+  <link href="{% static 'music/css/swiper.css' %}" rel="stylesheet" />
+  <link href="{% static 'music/css/magnific-popup.css' %}" rel="stylesheet" />
+  <link href="{% static 'music/css/style.css' %}" rel="stylesheet" />
 
-  <body data-spy="scroll" data-target=".fixed-top">
-    <!-- Preloader -->
-    <div class="spinner-wrapper">
-      <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-      </div>
+  <!-- Favicon  -->
+  <link rel="icon" href="{% static 'music/images/headphone.png' %}" />
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+  <!-- Preloader -->
+  <div class="spinner-wrapper">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
     </div>
-    <!-- end of preloader -->
+  </div>
+  <!-- end of preloader -->
 
-    <div id="features" class="tabs">
-      <div class="container">
-        <div class="card right-pane" style="margin-top: -5rem">
-          <div class="card-body">
-            <div class="card-icon">
-              <a
-                title="Close (Esc)"
-                href="{% url 'predictor:index' %}"
-                style="color: white"
-              >
-                <i class="fas fa-backward"></i>
-              </a>
+  <div id="features" class="tabs ">
+    <div class="container">
+      <div class="card right-pane" style="margin-top: -5rem">
+        <div class="card-body">
+          <div class="card-icon">
+            <a title="Close (Esc)" href="{% url 'predictor:index' %}" style="color: white">
+              <i class="fas fa-backward"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col col-lg-6 text">
+          <img src="{% static 'music/images/results.jpg' %}" />
+          <h3 style="position: absolute; top: 260px; left: 250px; color: rgb(28, 14, 51);">{{ genre }}</h3>
+        </div>
+        <div class="col col-lg-3 " style="color: blue; margin-top   : 150px; margin-left: 100px; ">
+          <div class="card">
+            <div class="card-body">
+              <img src="{% static 'music/images/celebration-2.png' %}" style="height: 200px; width: 200px;" />
+              <h5 class="ml-3">The Genre of the Dataset is {{ genre }}</h5>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>Your Music's Genre is</h2>
-            <div class="col-md-12">
-              <div class="row mt-5">
-                <div class="col-md-4">
-                  <img
-                    class="img-fluid"
-                    src="{% static 'music/images/celebration-1.png' %}"
-                    alt="alternative"
-                  />
-                </div>
-                <div class="col-md-4">
-                  <div class="card right-pane" style="margin-top: -5rem">
-                    <div class="card-body">
-                      <div
-                        class="card-icon"
-                        style="
+      </div>
+      <!-- <div class="row">
+        <div class="col-lg-12">
+          <h2>Your Music's Genre is</h2>
+          <div class="col-md-12">
+            <div class="row mt-5">
+              <div class="col-md-4">
+                <img class="img-fluid" src="{% static 'music/images/celebration-1.png' %}" alt="alternative" />
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <div class="card-icon" style="
                           height: 38vh;
                           width: 38vh;
                           margin-top: 6rem;
                           margin-left: 3rem;
                           background-color: blueviolet;
-                        "
-                      >
-                        <h3 style="margin-top: 7rem">
-                          <i> {{ genre }} </i>
-                        </h3>
-                      </div>
-                    </div>
+                          border-radius: 50%;
+                        
+                        ">
+                    <h3 class="text-center">
+                      <i> {{ genre }} </i>
+                    </h3>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <img
-                    class="img-fluid"
-                    src="{% static 'music/images/celebration-2.png' %}"
-                    style="height: 300px"
-                    alt="alternative"
-                  />
-                </div>
+
+              </div>
+              <div class="col-md-4">
+                <img class="img-fluid" src="{% static 'music/images/celebration-2.png' %}" style="height: 300px"
+                  alt="alternative" />
               </div>
             </div>
           </div>
-          <!-- end of col -->
-        </div>
-        <!-- end of row -->
-      </div>
+        </div> -->
+      <!-- end of col -->
     </div>
+    <!-- end of row -->
+  </div>
+  </div>
 
-    {%include 'music/snippets/js.html'%}
-  </body>
+  {%include 'music/snippets/js.html'%}
+</body>
+
 </html>

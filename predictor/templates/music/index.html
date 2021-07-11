@@ -28,7 +28,7 @@
 									learning models for recognizing the music genre of given fragments of music tracks.
 								</p>
 								<a href="#basic-2" class="site-btn">Upload Music</a>
-								<a href="#" class="site-btn sb-c2">Dashboard</a>
+								<a href="{% url 'predictor:dashboard' %}" class="site-btn sb-c2">Dashboard</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -50,7 +50,7 @@
 									learning models for recognizing the music genre of given fragments of music tracks.
 								</p>
 								<a href="#basic-2" class="site-btn">Upload Music</a>
-								<a href="#" class="site-btn sb-c2">Dashboard</a>
+								<a href="{% url 'predictor:dashboard' %}" class="site-btn sb-c2">Dashboard</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -72,7 +72,7 @@
 									learning models for recognizing the music genre of given fragments of music tracks.
 								</p>
 								<a href="#basic-2" class="site-btn">Upload Music</a>
-								<a href="#" class="site-btn sb-c2">Dashboard</a>
+								<a href="{% url 'predictor:dashboard' %}" class="site-btn sb-c2">Dashboard</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -141,7 +141,8 @@
 				<div class="col-md-4">
 					<div class="how-item">
 						<div class="hi-icon">
-							<img src="img/icons/brain.png" alt="">
+							<img src="{% static 'music/img/icons/brain.png' %}" alt="">
+
 						</div>
 						<h4>Data Collection and preparation</h4>
 						<p>Using pre-collected data by way of datasets from kaggle,UCI,etc,still fits into this
@@ -153,7 +154,7 @@
 				<div class="col-md-4">
 					<div class="how-item">
 						<div class="hi-icon">
-							<img src="img/icons/pointer.png" alt="">
+							<img src="{% static 'music/img/icons/pointer.png' %}" alt="">
 						</div>
 						<h4>Model selection,Training</h4>
 						<p>different algorithms for different tasks.choose the right one .The goal of traing is to
@@ -164,7 +165,7 @@
 				<div class="col-md-4">
 					<div class="how-item">
 						<div class="hi-icon">
-							<img src="img/icons/smartphone.png" alt="">
+							<img src="{% static 'music/img/icons/check-icon.png' %}" alt="">
 						</div>
 						<h4>Make Predictions</h4>
 						<p>Using further data which have,until this point,been withheld from the model are used to test
